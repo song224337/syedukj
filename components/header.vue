@@ -1,12 +1,12 @@
 <template>
   <div class="header">
     <el-row class="header-inner">
-      <el-col :span="5">
+      <el-col :span="6">
         <div class="logo01-box">
           <img src="~static/images/logo01.png" alt="">
         </div>
       </el-col>
-      <el-col :span="12">
+      <el-col :span="13">
         <div class="nav-header">
           <el-menu :default-active="activeNav" class="el-menu-demo" active-text-color=#023894 mode="horizontal" @select="handleSelect">
             <el-menu-item v-for="(item ,index) in navs" :key="index" class="nav-button" :index="item.name">
@@ -15,7 +15,7 @@
           </el-menu>
         </div>
       </el-col>
-      <el-col :span="7">
+      <el-col :span="5">
         <div class="hot-tel">
           <i class="icon iconfont icon-dianhua2"></i>
           <span class="number">400-998-7863</span>
@@ -53,7 +53,7 @@
 </script>
 
 <style scoped>
- .active{
-   color:#023894;
- }
+  .el-menu--horizontal{
+    border-bottom:none;
+  }
 </style>

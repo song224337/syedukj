@@ -2,6 +2,9 @@ html,body,div,p,ul,li,ol,dd,dt{
   margin:0;
   padding:0;
 }
+li{
+  list-style:none;
+}
 html{
   font-size:14px;
   font-family:'Microsoft YaHei';
@@ -36,6 +39,7 @@ a{
 }
 .logo01-box{
   padding-top:15px;
+  padding-left:100px;
 }
 .el-menu-demo{
   height:100%;
@@ -52,7 +56,7 @@ a{
   padding-top:20px;
   font-size:24px;
   position:relative;
-  padding-left:50px;
+  padding-left:25px;
 }
 .hot-tel .icon{
   font-size:36px;
@@ -60,6 +64,6 @@ a{
 .hot-tel .number{
   display:block;
   position:absolute;
-  left:100px;
+  left:70px;
   top:25px;
 }

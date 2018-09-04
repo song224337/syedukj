@@ -15,6 +15,11 @@ import Header from '~/components/header.vue'
       return{
         activeNav:'about'
       }
+    },
+    head(){
+      return{
+        title:'关于我们-上元会计'
+      }
     }
   }
 </script>
