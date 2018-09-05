@@ -120,15 +120,19 @@
           </el-col>
         </el-row>
       </div>
+      <!-- 页脚 -->
+      <Footer></Footer>
     </div>
 </template>
 
 <script>
 import Header from '~/components/header.vue'
+import Footer from '~/components/footer.vue'
 import Swiper from '~/components/swiper.vue'
 export default {
   components: {
     Header,
+    Footer,
     Swiper
   },
   data(){

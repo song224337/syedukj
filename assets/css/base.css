@@ -34,12 +34,11 @@ a{
   box-shadow:2px 2px 3px #eee;
 }
 .header-inner{
-  width:1340px;
+  width:1200px;
   margin:0 auto;
 }
 .logo01-box{
   padding-top:15px;
-  padding-left:100px;
 }
 .el-menu-demo{
   height:100%;
@@ -56,7 +55,7 @@ a{
   padding-top:20px;
   font-size:24px;
   position:relative;
-  padding-left:25px;
+  padding-left:65px;
 }
 .hot-tel .icon{
   font-size:36px;
@@ -64,6 +63,57 @@ a{
 .hot-tel .number{
   display:block;
   position:absolute;
-  left:70px;
+  left:115px;
   top:25px;
+}
+/* footer */
+.footer{
+  width:100%;
+  background:#2d3237;
+  padding:10px 0;
+}
+.footer-inner{
+  width:1200px;
+  margin:30px auto;
+}
+.footer-img{
+  width:800px;
+  margin:20px auto;
+}
+.logo01-box{
+  width:280px;
+  float:left;
+}
+.footer-tel{
+  width:100%;
+  margin-top:65px;
+  font-size:30px;
+  color:#fff;
+  position:relative;
+  margin-left:30px;
+}
+.footer-tel .icon{
+  font-size:36px;
+}
+.footer-tel .number{
+  display:block;
+  position:absolute;
+  left:45px;
+  top:0;
+}
+.footer-code{
+  float:right;
+}
+.footer-code p{
+  font-size:20px;
+  font-weight:bold;
+  color:#fff;
+  margin-bottom:10px;
+}
+.address-copy{
+  margin-top:70px;
+  text-align:center;
+}
+.address-copy p{
+  margin:5px 0;
 }

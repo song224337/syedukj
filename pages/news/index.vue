@@ -1,15 +1,23 @@
 <template>
     <div>
         <Header :activeNav="activeNav"></Header>
-        这是新闻资讯页面
+        <div class="app">
+          <!-- 轮播 -->
+          <Swiper></Swiper>
+        </div>
+        <Footer></Footer>
     </div>
 </template>
 
 <script>
 import Header from '~/components/header.vue'
+import Swiper from '~/components/swiper.vue'
+import Footer from '~/components/footer.vue'
     export default {
         components:{
-            Header
+            Header,
+            Swiper,
+            Footer
         },
         data(){
             return{

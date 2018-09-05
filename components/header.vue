@@ -1,12 +1,12 @@
 <template>
   <div class="header">
     <el-row class="header-inner">
-      <el-col :span="6">
+      <el-col :span="5">
         <div class="logo01-box">
           <img src="~static/images/logo01.png" alt="">
         </div>
       </el-col>
-      <el-col :span="13">
+      <el-col :span="14">
         <div class="nav-header">
           <el-menu :default-active="activeNav" class="el-menu-demo" active-text-color=#023894 mode="horizontal" @select="handleSelect">
             <el-menu-item v-for="(item ,index) in navs" :key="index" class="nav-button" :index="item.name">
@@ -55,5 +55,8 @@
 <style scoped>
   .el-menu--horizontal{
     border-bottom:none;
+  }
+  .el-menu-item{
+    font-size:16px;
   }
 </style>

@@ -1,6 +1,4 @@
-# y
-
-> y
+#first_nuxt 
 
 ## Build Setup
 
