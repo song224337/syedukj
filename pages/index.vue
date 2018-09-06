@@ -13,7 +13,7 @@
               <el-tab-pane label="最新文章" name="first">
                 <div>
                   <ul class="content-list">
-                    <li v-for="(item,index) in essay1" :key="index" class="clearFloat">
+                    <li v-for="(item,index) in essay1" :key="index" class="clearFloat" @click="handleClickDetail(1)">
                       <nuxt-link to="">
                         <div class="content-img">
                           <img :src="item.img" alt="" class="fullWidth">
@@ -344,6 +344,10 @@ export default {
   methods: {
     handleClick(tab, event) {
       console.log(tab, event);
+    },
+    handleClickDetail(value){
+      console.log(value)
+      this.$router.push('news/newsDetail?id='+value)
     }
   }
 }

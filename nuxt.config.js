@@ -11,7 +11,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet',  href: '//at.alicdn.com/t/font_822111_lvqkkbg4dxm.css' },
+      { rel: 'stylesheet',  href: '//at.alicdn.com/t/font_822111_e539l34lxye.css' },
     ]
   },
   // css
@@ -35,7 +35,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor:['element-ui'],
+    vendor:['element-ui','axios'],
     /*
     ** Run ESLint on save
     */
