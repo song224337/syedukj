@@ -13,8 +13,8 @@
               <el-tab-pane label="最新文章" name="first">
                 <div>
                   <ul class="content-list">
-                    <li v-for="(item,index) in essay1" :key="index" class="clearFloat" @click="handleClickDetail(1)">
-                      <nuxt-link to="">
+                    <li v-for="(item,index) in essay1" :key="index" class="clearFloat" >
+                      <nuxt-link to="news/3308">
                         <div class="content-img">
                           <img :src="item.img" alt="" class="fullWidth">
                         </div>
@@ -129,6 +129,7 @@
 import Header from '~/components/header.vue'
 import Footer from '~/components/footer.vue'
 import Swiper from '~/components/swiper.vue'
+import axios from 'axios'
 export default {
   components: {
     Header,
@@ -344,10 +345,6 @@ export default {
   methods: {
     handleClick(tab, event) {
       console.log(tab, event);
-    },
-    handleClickDetail(value){
-      console.log(value)
-      this.$router.push('news/newsDetail?id='+value)
     }
   }
 }

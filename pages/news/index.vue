@@ -10,7 +10,7 @@
             <div class="bread-line">
               <span class="icon iconfont icon-home"></span>
               <el-breadcrumb separator-class="el-icon-arrow-right" class="bread">
-                <el-breadcrumb-item :to="{ name: 'index' }">首页</el-breadcrumb-item>
+                <el-breadcrumb-item to="/">首页</el-breadcrumb-item>
                 <el-breadcrumb-item>新闻资讯</el-breadcrumb-item>
               </el-breadcrumb>
             </div>
@@ -18,7 +18,7 @@
             <div class="news-content">
               <ul>
                 <li v-for="(item,index) in newsData" :key="index" class="clearFloat">
-                  <nuxt-link :to="{name:router}">
+                  <nuxt-link to="">
                     <div class="time">
                       <span class="year-month">{{(item.time).slice(0,7)}}</span>
                       <span class="day-num">{{(item.time).slice(8)}}</span>
@@ -50,13 +50,12 @@ import Footer from '~/components/footer.vue'
         data(){
             return{
                 activeNav:'news',
-                router:['/news/newsDetail'],
                 newsData:[
                   {
                     title:'会计培训班学霸CPA一次过六科是怎么做到的？',
                     desc:'长跑比赛当中，决定着最终结果的往往是最后几百米甚至最后几十米的距离，对于中级会计职称也是如此，最后二十天甚至最后几天也有着极大的可能性改变最终结果。因此，不管你现在的复习进度和复习成果如何，在最后的这二十天时间里，如果能够放手一搏，那么广大考生通过考试的概率必然会得到很大提升。但是，究竟怎么样放手一搏呢？下面和上元会计小编一起来看看吧！',
                     time:'2018-09-03',
-                    id:1
+                    id:'a'
                   },
                   {
                     title:'会计培训班学霸CPA一次过六科是怎么做到的？',
@@ -125,6 +124,16 @@ import Footer from '~/components/footer.vue'
             return{
                 title:'新闻资讯-上元会计'
             }
+        },
+        methods:{
+          handleClick (id){
+            console.log(id)
+            if(/^\d+$/.test(id)){
+              this.$router.push("/news/"+id)
+            }else{
+              alert('参数不正确')
+            }
+          }
         }
     }
 </script>

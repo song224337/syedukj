@@ -12,7 +12,10 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet',  href: '//at.alicdn.com/t/font_822111_e539l34lxye.css' },
-    ]
+    ],
+    // script:[
+    //   {src: 'http://lead.soperson.com/20001774/10063000.js'}
+    // ]
   },
   // css
   css:[

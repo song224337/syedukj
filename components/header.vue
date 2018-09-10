@@ -8,9 +8,9 @@
       </el-col>
       <el-col :span="14">
         <div class="nav-header">
-          <el-menu :default-active="activeNav" class="el-menu-demo" active-text-color=#023894 mode="horizontal" @select="handleSelect">
+          <el-menu :default-active="activeNav" class="el-menu-demo" active-text-color=#023894 mode="horizontal">
             <el-menu-item v-for="(item ,index) in navs" :key="index" class="nav-button" :index="item.name">
-              {{item.title}}
+              <nuxt-link :to="{name:item.name}">{{item.title}}</nuxt-link>
             </el-menu-item>
           </el-menu>
         </div>
@@ -44,9 +44,7 @@
       }
     },
     methods:{
-      handleSelect(key){
-        this.$router.push({name:key});
-      }
+
     },
     props:['activeNav'],
   }
